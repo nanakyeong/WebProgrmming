@@ -1,68 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
-    <title>기말과제</title>
-    <link rel="stylesheet" href="../css/introduce.css">
+  <meta charset="UTF-8">
+  <meta name="자기소개" content="진로 소개 및 자기소개">
+  <title>기말과제</title>
+  <link href="../css/introduce.css" rel="stylesheet">
 </head>
 <body>
 
 <header class="navbar">
-    <a href="index.html" class="logo">FinalProject</a>
-    <nav class="nav-links">
-        <a href="introduce.html">자기소개</a>
-        <a href="company.html">관심 기업</a>
-        <a href="plan.html">계획 및 목표</a>
-    </nav>
+  <a href="index.html" class="logo">FinalProject</a>
+  <nav class="nav-links">
+    <a href="introduce.html">자기소개</a>
+    <a href="company.html">관심 기업</a>
+    <a href="plan.html">계획 및 목표</a>
+  </nav>
 </header>
 
-<section class="intro">
-    <div class="intro-content">
-        <p><strong>성장과정</strong></p><br>
-        <div class="intro-box">
-            <p>컴퓨터 관련 전공에 대한 관심은 경영학과 입학 전부터 꾸준히 가지고 있었습니다. 이후 코딩 동아리 PRIMITIVE에서 활동하며 실제로 프로그래밍을 접하게 되었고, 이를 계기로 소프트웨어학과로 전과하게 되었습니다. 전과 후에는 Java, Python, C 등 다양한 언어를 배우는 과정에서 데이터가 어떻게 전달되고 처리되는지, 백엔드 시스템이 어떻게 작동하는지에 흥미를 가지게 되었으며, 특히 네트워크 구조와 프로토콜을 이해하는 것이 프로그램 전체 흐름을 파악하는 데 핵심이라는 점을 깨달았습니다.
-                이러한 경험을 통해 단순히 눈에 보이는 결과를 만드는 것보다, 사용자의 요청을 받아 처리하고 응답을 반환하는 서버 개발자의 역할에 큰 매력을 느끼게 되었습니다. 다양한 기술을 활용해 안정적이고 효율적인 백엔드 시스템을 구축하는 것에 관심을 가지게 되었고, 앞으로는 서버 개발자로서 IT 시스템의 신뢰성과 보안성을 높일 수 있는 견고한 코드를 구현해 나가고자 합니다. </p>
-        </div>
+<section id="aboutMe" class="fade-in">
+  <br>
+  <div class="introduce_aboutme">
+    <h3>성장 과정</h3>
+    <div>
+      <p>컴퓨터 관련 전공에 대한 관심은 경영학과 입학 전부터 꾸준히 가지고 있었습니다.<br>
+        코딩 동아리 PRIMITIVE 활동을 통해 실제로 프로그래밍을 접하면서 소프트웨어학과로 전과하게 되었고,<br>
+        Java, Python, C 등 다양한 언어를 배우는 과정에서 데이터 처리 흐름과 백엔드 시스템의 구조에 흥미를 느끼게 되었습니다.<br>
+        특히 2022년 발생한 카카오의 개인정보 유출 사건은 저에게 큰 충격이었습니다.<br>
+        수많은 이용자의 서비스가 마비되고 개인정보가 유출되면서, IT 인프라의 취약점이 사용자 삶에 얼마나 큰 영향을 미칠 수 있는지를 실감했습니다.<br>
+        이 사건을 계기로 단순히 프로그램을 만드는 것에서 그치지 않고,<br>
+        서비스가 운영되는 인프라, 즉 클라우드 시스템의 중요성과 책임에 대해 깊이 고민하게 되었습니다.<br>
+        이후 네트워크 구조, 보안, 장애 대응 시스템에 대해 더 공부하게 되었고,<br>
+        안정적인 인프라를 설계하고 운영할 수 있는 클라우드 개발자가 되고 싶고, 큰 환경에서 신뢰성을 책임지는 개발자가 되고자 결심하게 되었습니다.<br>
+        앞으로는 백엔드 개발자로서의 역량뿐 아니라, 보안과 인프라에 대한 지식까지 갖춘 실력 있는 클라우드 개발자로 성장해나가고 싶습니다.<br>
+      </p>
     </div>
-</section>
-
-</section>
-    <div class="intro-img">
-        <p><strong>SKT 해킹 사건</strong></p>
-        <p>SK텔레콤 일부 서버가 해킹되어 고객 개인정보가 유출된 사건</p>
-        <p><small>사진을 눌러 링크를 이동해보세요👇</small></p>
-       <a href="https://www.youtube.com/watch?v=jxTo-w1HFFc" target="_blank">
-           <img src="../img/skt.jpeg" alt="introduce">
-       </a>
+  </div>
+  <div class="issue_aboutme">
+    <div class="issue_img">
+      <img src="../img/sk.png">
     </div>
-<section>
-
-<section class="reason">
-    <h2>이런 사건이 일어난 이유</h2>
-    <div class="reason-list">
-        <div class="reason-item">
-            <h3>🔒 1. 경계 보안 실패</h3>
-            <p>네트워크의 출입문 역할을 하는 구간에서 차단이 제대로 이루어지지 않았습니다.</p>
-        </div>
-        <div class="reason-item">
-            <h3>🧱 2. 서버 간 네트워크 분리 미흡</h3>
-            <p>망 분리, VLAN 설계, 내부 방화벽 정책이 허술했습니다.</p>
-        </div>
-        <div class="reason-item">
-            <h3>🚨 3. 이상 징후 탐지 실패</h3>
-            <p>비정상적인 트래픽을 탐지했지만 대응이 늦거나 무시된 사례입니다.</p>
-        </div>
+    <h2 class="issue_title">SKT 해킹 사건</h2>
+    <span class="highlight">SK텔레콤 일부 서버가 해킹되어 고객 개인정보가 유출된 사건</span>
+    <br>
+    <br>
+    <p><small>사진을 눌러 링크를 이동해보세요👇</small></p>
+    <a href="https://www.youtube.com/watch?v=jxTo-w1HFFc" target="_blank">
+      <img src="../img/skt.jpeg" alt="introduce">
+    </a>
+    <h2 class="howTo">이런 사건이 일어난 이유</h2>
+    <p>각 사진에 마우스 커서를 올려서 확인해보세요!</p>
+    <div class="howToImg">
+      <table>
+        <tbody>
+          <tr>
+            <td ><img src="../img/security.jpg"><p>네트워크의 출입문 역할을 하는 구간에서 차단이<br> 제대로 이루어지지 않았습니다.</p></td>
+            <td><img src="../img/network.jpg"><p>망 분리, VLAN 설계, 내부 방화벽 정책이 허술했습니다.</p></td>
+            <td><img src="../img/error.jpg"><p>비정상적인 트래픽을 탐지했지만 대응이 늦거나 무시된 사례입니다.</p></td>
+          </tr>
+          <tr>
+            <td><span>🔒 1. 경계 보안 실패</span></td>
+            <td><span>🧱 2. 서버 간 네트워크 분리 미흡</span></td>
+            <td><span>🚨 3. 이상 징후 탐지 실패</span></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</section>
 
-<section class="opnion">
-        <p><strong>나의 의견</strong></p><br>
-        <div class="opnion-box">
-            <p>이번 SKT 통신 장애를 통해, 네트워크 분야가 단순한 기술이 아닌 사람들의 일상과 안전을 책임지는 중요한 영역이라는 걸 느꼈습니다. 통신은 단순한 기술이 아니라 사람들의 삶과 직결된 기반 인프라 라고 생각합니다. 이처럼 수많은 사람들이 의지하는 시스템이 단 한 번의 취약점으로
-                인해 멈춰설 수 있다는 사실을 알게 되었고 앞으로 이 분야를 공부하고 책임질 사람으로서 깊은 책임감을 느끼게 했습니다. 시스템을 단단하게 설계하고, 문제가 생겨도 빠르게 복구할 수 있는 능력을 갖춘 네트워크 엔지니어로 성장하고 싶습니다.</p>
+    <div class="issue_myOpinion">
+      <h2>나의 의견</h2>
+      <p>이번 SKT 통신 장애를 통해, 네트워크 분야가 단순한 기술이 아닌 사람들의 일상과 안전을 책임지는 중요한 영역이라는 걸 느꼈습니다.<br>
+        통신은 단순한 기술이 아니라 사람들의 삶과 직결된 기반 인프라 라고 생각합니다.<br>
+        이처럼 수많은 사람들이 의지하는 시스템이 단 한 번의 취약점으로 인해 멈춰설 수 있다는 사실을 알게 되었습니다.<br>
+        앞으로 이 분야를 공부하고 책임질 사람으로서 깊은 책임감을 느끼게 했습니다.<br>
+        시스템을 단단하게 설계하고, 문제가 생겨도 빠르게 복구할 수 있는 능력을 갖춘 네트워크 엔지니어로 성장하고 싶습니다.</p>
     </div>
-</section>
+  </div>
 
+  <div class="error_aboutme">
+    <div class="error_project">
+      <h2>프로젝트 오류 해결</h2>
+      <table>
+        <tbody>
+        <tr>
+          <td><img src="board.jpg"></td>
+          <td><span>공주대학교 행정 앱</span><br>
+            <p>게시판 화면 구현 중 게시판 화면 UI불러올 때,<br>생명주기 onCreate에서 NULLPOINTER 오류 발생</p>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="error_reason">
+      <h3>&#128073;원인&#128072;</h3>
+      <p>: 네트워크 요청 처리 전, 즉 서버에서 아직 결과가 도착하기 전에 데이터 처리를 시도하여 오류 발생함<br>
+        데이터를 받아서 UI를 띄우는 로직을 수행하는 상황인데 데이터가 더 늦게 도착하는 상황 발생<br>
+        이로 인해 UI 설정 시 아무런 데이터를 받지 못하고 UI 업로드를 해서 NULL POINTER 오류가 일어남<br>
+        이는 서버에서 데이터를 받아 올때 retrofit의 enqueue()함수를 통해 데이터를 받아오기 떄문에 발생함<br>
+        retrofit의 enqueue()는 비동기화로 이루어지기 때문에 서버 응답이 오기 전에 다음 처리를 시도하게 됨<br>
+        이로 인해 데이터가 다 오기 전에 UI업로드를 진행하여 nullPointer오류가 발생한 것이었음<br>
+      </p>
+    </div>
+    <div class="error_solve">
+      <h3>&#128073;해결방식&#128072;</h3>
+      <div class="error_solve_code">
+        <img src="img/solveCode-1.png"><img src="img/solveCode-2.png">
+      </div>
+      <p class="solve_title">비동기와 동기의 혼합으로 해결</p>
+      <br>
+      <div class="error_solve_detail">
+        <p><mark>동기</mark></p>
+        <p>: retrofit의 execute()를 이용하여 네트워크 요청을 동기화하여 응답을 받은 후 데이터 처리를 하도록 수정함</p>
+        <br>
+        <p><mark>비동기</mark></p>
+        <p>: 서버 응답 시까지 UI를 띄우지않으면 사용자 입장에서는 답답할 수 있기 때문에
+          UI를 띄우는 메인 스레드와 <br>네트워크 요청을 처리하는 백그라운 스레드로 나누어 비동기화로 수행되도록 함<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="error_solve_improve">
+      <h3>&#128073;아쉬운 점&#128072;</h3>
+      <p>: 새로고침 기능과 데이터 응답 대기 아이콘을 추가하면 사용자 편의성이 극대화되었을 것<br>이는 서버 배포까지 하지못해서 구현하지 못함</p>
+    </div>
+  </div>
+  <div class="intersting_skill">
+
+    <p id="skill_title">관심 기술</p>
+    <div>
+      <p class="spring_title">&#128073;스프링/스프링 부트&#128072;</p>
+      <table>
+        <tbody>
+        <tr>
+          <td><img src="../img/springBoot.png" class="spring_img"></td>
+          <td><p class="spring_content">스프링(Spring)은 자바 기반의 대규모 웹 애플리케이션을 쉽게 만들 수 있도록 지원하는 프레임워크다.<br>
+            스프링 부트(Spring Boot)는 스프링을 더 간편하게 사용할 수 있도록 설정을 자동화해 빠르게 개발할 수 있게 해준다.<br>
+            네이버 클라우드는 스프링/스프링 부트로 만든 웹 서비스를 클라우드 서버에 배포하고 운영할 수 있는 인프라를 제공한다.<br>
+            예를 들어, 네이버 클라우드의 Compute, Cloud DB, Object Storage 등을 활용해 백엔드 서비스와 데이터베이스를 연동할 수 있다.<br>
+            스프링 부트 앱을 Docker 이미지로 만들어 네이버 클라우드 Kubernetes 서비스에 배포하면 효율적인 클라우드 운영이 가능하다.<br>
+        </tr>
+        </tbody>
+      </table>
+
+      <p class="mysql_title">&#128073;mysql&#128072;</p>
+      <table>
+        <tbody>
+        <tr>
+          <td><img src="../img/mysql.png" class="mysql_img"></td>
+          <td><p class="mysql_content">MySQL은 오픈소스 관계형 데이터베이스로, 다양한 웹 애플리케이션에서 널리 사용된다.<br>
+            네이버 클라우드는 ‘Cloud DB for MySQL’ 서비스를 통해 MySQL을 클라우드 환경에서 쉽게 사용할 수 있도록 지원한다.<br>
+            이 서비스는 자동 백업, 보안 설정, 모니터링 등 관리 기능을 포함해 안정적인 데이터 운영을 가능하게 한다.<br>
+            따로 MySQL을 설치하지 않아도 콘솔에서 몇 번의 클릭으로 데이터베이스를 구축하고 바로 연동할 수 있다.<br>
+            스프링 부트와도 잘 연동되어, 네이버 클라우드를 활용한 백엔드 개발에 매우 적합한 DB 솔루션이다.<br>
+          </p></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
 </section>
+<script src="../js/scroll.js" charset="UTF-8"></script>
+<script src="../js/fadein.js" charset="UTF-8"></script>
+<script src="../js/loading.js" charset="UTF-8"></script>
 </body>
 </html>

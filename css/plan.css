@@ -4,11 +4,6 @@
 }
 
 .backSky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
     background: linear-gradient(to right, #111, #0e0f19);
     overflow: hidden;
     z-index: 0;
@@ -133,7 +128,7 @@
   flex: 2;
   background-color: #fff;
   padding: 20px;
-  border-left: 2px solid #4e1e14;
+  border-left: 2px solid #ffffff;
   line-height: 1.7;
   font-size: 0.95rem;
 }
@@ -143,9 +138,11 @@
 }
 
 .meteor-container {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     pointer-events: none;
     z-index: 0;
 }
@@ -182,4 +179,52 @@
         transform: translate(-100vw, 100vh);
         opacity: 0;
     }
+}
+
+#plan_study {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 60px;
+    margin: 50px auto;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+#plan_study h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+#plan_study table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+#plan_study th,
+#plan_study td {
+    padding: 16px 20px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+#plan_study th {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    width: 25%;
+    text-align: left;
+}
+
+#plan_study td {
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+#plan_study td br {
+    margin-bottom: 10px;
 }

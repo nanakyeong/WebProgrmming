@@ -109,9 +109,21 @@
       </table>
     </div>
 
-  </div>
+    <div class="cheer-container">
+      <button class="cheer-button" onclick="showCheer()">&#128140; 응원 메시지 보기</button>
+      <p id="cheer-msg"></p>
 
-  <script src="../js/meteor.js"></script>
-  <script src="../js/star.js"></script>
+      <div class="self-cheer-container">
+        <input type="text" id="selfInput" placeholder="나에게 보내는 한마디" class="cheer-input">
+        <button onclick="sendSelfCheer()" class="cheer-send-button">전송</button>
+      </div>
+
+      <div id="floating-cheer"></div>
+      <audio id="clapSound" src="../img/clap.mp3" preload="auto"></audio>
+    </div>
+  </div>
+<script src="../js/meteor.js"></script>
+<script src="../js/star.js"></script>
+<script src="../js/message.js"></script>
 </body>
 </html>

@@ -31,7 +31,6 @@
     stroke-width: 0;
 }
 
-/* 별 이동효과 */
 @keyframes moveStar {
     from {
         transform: translate(-50%, -50%) rotate(0)
